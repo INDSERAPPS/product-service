@@ -113,6 +113,30 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+				<groupId>org.wildfly.plugins</groupId>
+				<artifactId>wildfly-maven-plugin</artifactId>
+				<version>1.1.0.Alpha10</version>
+				<configuration>
+					<id>${wildfly-id}</id>
+					<hostname>${wildfly-hostname}</hostname>
+					<port>${wildfly-port}</port>
+				</configuration>
+				<executions>
+					<execution>
+						<id>Product_CA_Server1</id>
+						<phase>install</phase>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+						<configuration>
+							<id>Customer_CA_Server1</id>
+							<hostname>35.182.199.43</hostname>
+							<port>9990</port>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 
         </plugins>
     </build>
