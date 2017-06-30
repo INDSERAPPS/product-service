@@ -130,8 +130,8 @@
 							<goal>deploy</goal>
 						</goals>
 						<configuration>
-							<id>Customer_CA_Server1</id>
-							<hostname>35.182.199.43</hostname>
+							<id>Product_CA_Server1</id>
+							<hostname>35.182.155.49</hostname>
 							<port>9990</port>
 						</configuration>
 					</execution>
