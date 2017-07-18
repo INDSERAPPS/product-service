@@ -131,7 +131,7 @@
 						</goals>
 						<configuration>
 							<id>Product_CA_Server1</id>
-							<hostname>35.182.155.49</hostname>
+							<hostname>35.182.17.208</hostname>
 							<port>9990</port>
 						</configuration>
 					</execution>
